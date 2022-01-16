@@ -111,6 +111,11 @@ namespace SudokuNanpure
             field[x, y] = -1;
         }
 
+        /// <summary>
+        /// 深さ優先探索
+        /// </summary>
+        /// <param name="board">問題</param>
+        /// <param name="res">回答</param>
         public void Dfs(ref Sudoku board, ref int[,] res)
         {
             // 空きマスの座標を表す
